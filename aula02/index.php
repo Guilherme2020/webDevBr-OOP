@@ -7,7 +7,7 @@
 
 
 
-    var_dump($pdo->exec('INSERT INTO usuarios (nome,sobrenome,email,senha)VALUES ("Marltsa",
-            "Crazy","atendimento@gmail.com","2!@21212121213");'));
+    var_dump($pdo->exec('INSERT INTO usuarios (nome,sobrenome,email,senha)VALUES ("Guilherme",
+            "Rodrigues","gui@gmail.com","@AAAkskaskasaa");'));
 
 
