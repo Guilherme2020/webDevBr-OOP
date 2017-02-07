@@ -1,0 +1,24 @@
+{
+
+  "name":"Rodrigues/webDevBr-OOP",
+  "description":"Framework do Curso de PHP Orientado a Objetos do WebDevBr",
+  "minimum-stability":"stable",
+  "authors":[
+        {
+            "name":"Guilherme Rodrigues",
+            "email":"grodrigues.simeao@gmail.com"
+        }
+   ],
+  "name":"",
+  "autoload":{
+    "psr-0":{
+      "Core": "src",
+      "Application":"src"
+    }
+   },
+   "require":{
+     "php": ">=5.5.0"
+
+   }
+
+}
