@@ -5,7 +5,7 @@
 
     use Core\BancoDeDados\Instrucao;
 
-    class Insert extends Instrucao
+    final  class Insert extends Instrucao
     {
 
         private $valores;
@@ -13,6 +13,8 @@
         public function retornaSql()
         {
             // TODO: Implement retornaSql() method.
+            if(empty($this->entidade))
+                throw new \Exception('Voce nao declarou a entidade');
             $sql = 'INSERT INTO '.$this->entidade.' '.$this->valores.';';
             return $sql;
         }

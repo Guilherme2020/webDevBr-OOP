@@ -6,7 +6,7 @@
     abstract class Instrucao{
         protected $sql,$filtros,$entidade;
 
-        public function setaEntidade($entidade){
+        final public function setaEntidade($entidade){
             if(is_string($entidade)){
                 $this->entidade = $entidade;
                 return $this;
@@ -14,8 +14,9 @@
                 throw new \Exception('A entidade deve ser uma String');
             }
         }
-        public function setaFiltros($filtros){
-
+        final public function setaFiltros(){
+            $this->filtros = new Filtros();
+            return $this->filtros;
         }
         abstract public function retornaSql();
 
