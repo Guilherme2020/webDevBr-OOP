@@ -20,6 +20,8 @@ class BancoDeDados{
 
     ];
 
+    // Formas de array
+
 
 
 }

@@ -14,6 +14,12 @@
                 throw new \Exception('A entidade deve ser uma String');
             }
         }
+
+//        final public function setaFiltros(Filtros $filtos)
+//        {
+//            $this->filtros = $filtos->retornaSql();
+//            return $this;
+//        }
         final public function setaFiltros(){
             $this->filtros = new Filtros();
             return $this->filtros;
